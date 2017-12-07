@@ -1,8 +1,15 @@
 #prints to terminal
 
-def ninja_intro(dictionary):
-    for key, val in dictionary.items():
-        print(f'I am {key}, and I am a {val} belt')
+def belt_count(dictionary):
+    belts = list(dictionary.values())
+    for belt in set(belts):
+        num = belts.count(belt)
+        print(f"There are {num} {belt} belts")
+
+
+# def ninja_intro(dictionary):
+#     for key, val in dictionary.items():
+#         print(f'I am {key}, and I am a {val} belt')
 
 ninja_belts = {}
 
@@ -17,4 +24,9 @@ while True:
     else:
         break;
 
-ninja_intro(ninja_belts)
+#ninja_intro(ninja_belts)
+belt_count(ninja_belts)
+
+#sort()
+#set()
+#sets do not have duplicates, but do not sort
