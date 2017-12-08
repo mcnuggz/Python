@@ -1,7 +1,6 @@
 #download images from web
 import urllib.request
 
-#
 def dl_jpg(url, file_path, file_name = "Untitled"):
     #create full path
     full_path = file_path + file_name + '.jpg'
